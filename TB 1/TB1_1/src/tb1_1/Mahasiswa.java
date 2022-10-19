@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tb1_1;
+
+/**
+ *
+ * @author Zaidan Habitullah Husni
+ * @nim 41821010025
+ */
+class Mahasiswa {
+     String nama;
+    String mk;
+    String indeks;
+    int nilai;
+
+    public String getNama() {
+        return nama;
+    }
+
+    public int getNilai() {
+        return nilai;
+    }
+
+    public String getMK() {
+        return mk;
+    }
+
+    public String getIndeks() {
+        if (getNilai() >= 80) {
+            indeks = "A";
+        } else if (getNilai() > 75) {
+            indeks = "B+";
+        } else if (getNilai() > 70) {
+            indeks = "B";
+        } else if (getNilai() > 65) {
+            indeks = "B-";
+        } else if (getNilai() > 60) {
+            indeks = "C+";
+        } else if (getNilai() > 55) {
+            indeks = "C";
+        } else if (getNilai() > 50) {
+            indeks = "C-";
+        } else if (getNilai() > 30) {
+            indeks = "D";
+        } else if (getNilai() <= 30) {
+            indeks = "E";
+        }
+        ;
+        return indeks;
+    }
+}
